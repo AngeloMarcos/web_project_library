@@ -20,11 +20,8 @@
     />
     <title>Biblioteca Triple Peaks</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
-
   <body>
     <div class="page">
       <header class="header">
@@ -35,21 +32,17 @@
             alt="Logo coffeshop dark"
           />
           <ul class="nav__links">
-            <li>
-              <a href="#recipes" class="nav__link">Receitas</a>
-            </li>
+            <li><a href="#recipes" class="nav__link">Receitas</a></li>
             <li>
               <a href="#reservation" class="nav__link">Reservar uma mesa</a>
             </li>
-            <li>
-              <a href="#contacts" class="nav__link">Contatos</a>
-            </li>
+            <li><a href="#contacts" class="nav__link">Contatos</a></li>
           </ul>
         </nav>
 
         <h1 class="header__title">
-          <span class="header__span-accent"> Café especial </span>
-          na biblioteca Triple Peaks
+          <span class="header__span-accent"> Café especial </span> na biblioteca
+          Triple Peaks
         </h1>
 
         <p class="header__description">
@@ -77,6 +70,7 @@
           </div>
         </div>
       </header>
+
       <main class="content">
         <section class="recipes" id="recipes">
           <div class="recipes__content">
@@ -102,7 +96,6 @@
                   <p>~5 min</p>
                 </div>
               </div>
-
               <div class="recipes__video-item">
                 <iframe
                   class="recipes__iframe"
@@ -120,9 +113,106 @@
             </div>
           </div>
         </section>
-        <section id="reservation" class="reservation"></section>
+
+        <section class="reservation" id="reservation">
+          <div class="reservation__content">
+            <div class="reservation__form-container">
+              <h2 class="reservation__title">Reservar uma mesa</h2>
+              <form class="form reservation__form">
+                <fieldset class="form__fieldset">
+                  <label for="name" class="form__label">Nome *</label>
+                  <input
+                    id="name"
+                    type="text"
+                    class="form__input"
+                    placeholder="Nome"
+                    required
+                  />
+                  <label for="number-guests" class="form__label"
+                    >Número de Convidados *</label
+                  >
+                  <input
+                    id="number-guests"
+                    type="number"
+                    class="form__input"
+                    min="1"
+                    max="8"
+                    placeholder="1-8"
+                    required
+                  />
+                  <label for="date-time" class="form__label"
+                    >Data e Hora *</label
+                  >
+                  <input
+                    id="date-time"
+                    type="datetime-local"
+                    class="form__input"
+                    required
+                  />
+                  <label for="email" class="form__label">Seu E-mail *</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form__input"
+                    placeholder="email@email.com"
+                    required
+                  />
+                  <button type="submit" class="form__button form__input">
+                    Reservar uma mesa
+                  </button>
+                  <label for="term" class="form__label">
+                    <input
+                      type="checkbox"
+                      id="term"
+                      class="form__checkbox"
+                      required
+                    />
+                    <span class="form__checkbox-text"
+                      >Eu concordo com os termos de uso</span
+                    >
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer id="contacts" class="footer"></footer>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img
+              src="./images/logo_coffeeshop_light.svg"
+              alt="logo_coffeeshop_light"
+            />
+          </div>
+          <div class="footer__circle"></div>
+          <div class="footer__social">
+            <h3 class="footer__column-heading">Midia Social</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="instagram_white"
+                  />Instagram
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="facebook_white"
+                  />Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">© 2024 Angelo Marcos</p>
+      </footer>
     </div>
   </body>
 </html>

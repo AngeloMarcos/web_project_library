@@ -1,0 +1,35 @@
+/* FORMULÁRIO */
+
+.reservation__form {
+    max-width: 385px;
+    margin: 0 auto;
+    border: none;
+}
+
+/* SEÇÃO DE RESERVA */
+
+.reservation {
+    padding-top: 100px;
+    background-color: #D9E7FF;
+    background-image: url("../images/background_reservation.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 120px;
+    position: relative;
+    /* Você pode remover essa propriedade, pois position: relative é o valor padrão */
+    z-index: 3;
+    /* Talvez não seja necessário definir um z-index aqui, a menos que você tenha outros elementos com sobreposição */
+}
+
+.reservation__title {
+    /* FONTES */
+    font-family: Inter, sans-serif;
+    /* Adicione a propriedade de backup sans-serif */
+    font-style: normal;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+}

@@ -4,6 +4,7 @@
     color: #ffffff;
     background-color: #0A2850;
     padding: 60px 80px;
+    overflow: auto;
 }
 
 .footer__content {
@@ -12,7 +13,7 @@
     width: 100%;
 }
 
-.footer__logo img {
+.footer__logo-image {
     width: 105px;
     height: 39px;
 }
@@ -44,18 +45,24 @@
 .footer__list {
     list-style-type: none;
     padding: 0;
-    /* Adicionado para remover o preenchimento padrão */
 }
 
-.footer__list a {
+.footer__column-link {
     color: #ffffff;
     text-decoration: none;
     font-family: "Inter", sans-serif;
     font-size: 16px;
+    margin-bottom: 16px;
     line-height: 20px;
     display: flex;
     align-items: center;
 }
+
+.footer__list :hover {
+    color: #2F80ED;
+}
+
+
 
 .footer__social-icon {
     width: 16px;

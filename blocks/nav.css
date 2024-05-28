@@ -16,9 +16,6 @@
     column-gap: 20px;
     margin-top: 30px;
     margin-right: 80px;
-    padding-left: 0;
-
-    /* FONTS */
     list-style: none;
     font-family: "inter";
     font-style: normal;
@@ -27,7 +24,11 @@
     line-height: 20px;
 }
 
-.nav__links a {
+.nav__links :hover {
+    color: #2F80ED;
+}
+
+.nav__link {
     text-decoration: none;
     color: #000000;
 }

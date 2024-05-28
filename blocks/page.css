@@ -1,7 +1,5 @@
-/* Define estilos específicos para a classe .page */
 .page {
     font-family: 'Inter', Arial, sans-serif;
-    /* Fonte para .page */
     font-size: 16px;
     line-height: 20px;
     min-width: 1100px;

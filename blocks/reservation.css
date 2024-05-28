@@ -1,12 +1,8 @@
-/* FORMULÁRIO */
-
 .reservation__form {
     max-width: 385px;
     margin: 0 auto;
     border: none;
 }
-
-/* SEÇÃO DE RESERVA */
 
 .reservation {
     padding-top: 100px;
@@ -16,15 +12,11 @@
     background-size: cover;
     padding-bottom: 120px;
     position: relative;
-    /* Você pode remover essa propriedade, pois position: relative é o valor padrão */
     z-index: 3;
-    /* Talvez não seja necessário definir um z-index aqui, a menos que você tenha outros elementos com sobreposição */
 }
 
 .reservation__title {
-    /* FONTES */
     font-family: Inter, sans-serif;
-    /* Adicione a propriedade de backup sans-serif */
     font-style: normal;
     margin: 0 auto;
     margin-bottom: 80px;
